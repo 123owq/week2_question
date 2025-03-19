@@ -39,6 +39,9 @@ jobs:
     - name: Lint with pylint
       run: |
         pylint *.py
+    - name: Check directory structure  # 디렉토리 구조 확인 단계 추가
+      run: |
+        ls -R
     - name: Test with pytest
       run: |
-        pytest
+        test
