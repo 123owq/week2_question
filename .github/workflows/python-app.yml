@@ -44,4 +44,4 @@ jobs:
         ls -R
     - name: Test with pytest
       run: |
-        test
+        pytest test.py
